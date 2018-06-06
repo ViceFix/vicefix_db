@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changeSet id="1" author="az">
+    <createTable tableName="person">
+        <column name="id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <column name="firstname" type="varchar(50)"/>
+        <column name="lastname" type="varchar(50)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="state" type="char(2)"/>
+    </createTable>
+</changeSet>
