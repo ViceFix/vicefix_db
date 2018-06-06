@@ -1,6 +1,6 @@
 language: java
 install:
-  - java -cp lib/logback-core-0.9.29.jar
+  - java -cp lib/logback-core-0.9.29.jar;
   - java -jar lib/liq/liquibase.jar --driver=org.postgresql.Driver --classpath=lib/postgresql.jar --changeLogFile=1.0/db.changelog.xml --url="jdbc:postgresql://ec2-54-75-244-248.eu-west-1.compute.amazonaws.com:5432/d6jknnjlg3j0em"  --username=aoglzitvpopxcj --password=7d897cb0de5ef5b00a8b9a04b9856dbe73b0e9534cc312096c1a68804652cc31 update
 branches:
   only:
