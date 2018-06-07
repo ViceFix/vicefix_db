@@ -5,15 +5,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <changeSet id="1.0.10" author="ozharkov" runOnChange="false">
+    <changeSet id="1.0.10" author="ozharkov" runOnChange="true">
         <sql>
-            CREATE TABLE COMPANY(
-            ID INT PRIMARY KEY     NOT NULL,
-            NAME           TEXT    NOT NULL,
-            AGE            INT     NOT NULL,
-            ADDRESS        CHAR(50),
-            SALARY         REAL
-            );
+            DROP TABLE COMPANY;
         </sql>
     </changeSet>
 </databaseChangeLog>
