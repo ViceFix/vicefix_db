@@ -5,13 +5,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <changeSet id="1.0.0010.001" author="ozharkov" runOnChange="false">
+    <changeSet id="1.0.0000.001" author="auto" runOnChange="false">
         <sql>
-            CREATE TABLE DEPARTMENT(
-            ID INT PRIMARY KEY      NOT NULL,
-            DEPT           CHAR(50) NOT NULL,
-            EMP_ID         INT      NOT NULL
-            );
+
         </sql>
     </changeSet>
 </databaseChangeLog>
